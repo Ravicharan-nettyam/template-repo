@@ -5,6 +5,9 @@ on: [push]
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requets: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
